@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Mind Pro Graphics | Portfolio</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; scroll-behavior: smooth; background:#fff; color:#333; transition: background 0.3s, color 0.3s; }
+    nav { position:fixed; top:0; width:100%; background:#111; padding:10px; text-align:center; z-index:1000; }
+    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
+    nav button { background:none; border:none; color:#fff; font-size:18px; cursor:pointer; }
+    header { height:100vh; background:#222; color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+    section { padding:80px 20px; max-width:1000px; margin:auto; }
+    h2 { text-align:center; margin-bottom:30px; }
+    .gallery { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .gallery img { width:100%; max-width:280px; border-radius:8px; transition:transform 0.3s; }
+    .gallery img:hover { transform:scale(1.05); }
+    footer { text-align:center; padding:20px; background:#111; color:#fff; }
+    form { display:flex; flex-direction:column; max-width:500px; margin:auto; }
+    input, textarea { margin:10px 0; padding:10px; border:1px solid #ccc; border-radius:5px; }
+    button { padding:10px; background:#111; color:#fff; border:none; border-radius:5px; cursor:pointer; }
+    button:hover { background:#333; }
+    .dark-mode { background:#111; color:#eee; }
+    .dark-mode nav { background:#333; }
+    .dark-mode header { background:#000; }
+    .dark-mode footer { background:#000; }
+    .dark-mode input, .dark-mode textarea { background:#222; color:#eee; border:1px solid #555; }
+    .dark-mode button { background:#eee; color:#111; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+    <button onclick="toggleDarkMode()">🌙</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Master Mind Pro Graphics</h1>
+    <p>Versatile graphics. Bold identity. Designs that inspire across every platform.</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Master Mind Pro Graphics is where creativity meets versatility. I design ultra high-resolution graphics for multiple industries — from e-sport logos and branding assets to digital illustrations and Creative Market products. Every project is built with precision, bold style, and market-ready quality, empowering businesses, creators, and individuals to stand out in competitive digital spaces. My goal is simple: to deliver designs that inspire, sell, and leave a lasting impact.</p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <a href="https://copilot.microsoft.com/th/id/BCO.e6245e67-52f6-4677-8d28-fd1c8503e514.png" target="_blank">
+        <img src="ai-art1.jpg" alt="Viking E-sport Logo and Neon Lion">
+      </a>
+      <a href="https://copilot.microsoft.com/th/id/BCO.0cb9e0b1-e373-48e5-b38a-859a67fad24e.png" target="_blank">
+        <img src="ai-art2.jpg" alt="Abstract Cosmic Digital Art">
+      </a>
+      <a href="https://copilot.microsoft.com/th/id/BCO.bb06a8cb-f3b6-4411-9b23-5d0112721cf7.png" target="_blank">
+        <img src="ai-art3.jpg" alt="Modern Branding Graphic">
+      </a>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop">
+    <h2>Shop</h2>
+    <p>Discover my full collection on <a href="https://creativemarket.com/yourstore" target="_blank">Creative Market</a>.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="mailto:mastermind4909@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Or reach me on Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Master Mind Pro Graphics. All rights reserved.</p>
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+</html>
